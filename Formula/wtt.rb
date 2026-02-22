@@ -11,7 +11,7 @@ class Wtt < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/songtov/wtt/releases/download/v0.1.0/wtt_darwin_amd64.tar.gz"
-      sha256 "f06b5a4a705541055186483a6dbc97086ac29be1b324c36e729dcb576a1beaf0"
+      sha256 "77a1428f16002b517497189cf5940c1f3d665bbf9354d8ca58520b0bb527463e"
 
       define_method(:install) do
         bin.install "wtt-bin"
@@ -19,7 +19,7 @@ class Wtt < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/songtov/wtt/releases/download/v0.1.0/wtt_darwin_arm64.tar.gz"
-      sha256 "ab2bd9e92bc38d4829e7b748d3e8d5f7bf2fb36c77f9ea8967d20e6037aac5fb"
+      sha256 "f141732878edf71c519b6defa023a67bbf5e42bc14158932fa9d2114306d79c9"
 
       define_method(:install) do
         bin.install "wtt-bin"
@@ -30,14 +30,14 @@ class Wtt < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/songtov/wtt/releases/download/v0.1.0/wtt_linux_amd64.tar.gz"
-      sha256 "111d5b919d3e3b72aaf9a5314c07cba29f4cea13a5b1aff6ccb5c0c738862eeb"
+      sha256 "d24b30d7f2cd3b3bdcae2225e84364a5fac1b5d39372e122cb85053ec2a871ed"
       define_method(:install) do
         bin.install "wtt-bin"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/songtov/wtt/releases/download/v0.1.0/wtt_linux_arm64.tar.gz"
-      sha256 "215bb3aaeb993b534f90d3ed23e5dc6196e0c54e3be1b2abb7116469554e3704"
+      sha256 "11953c120e49fdfcd3313913dd2963fe6229dacff36de797b4659ae12168c7ab"
       define_method(:install) do
         bin.install "wtt-bin"
       end
