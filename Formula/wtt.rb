@@ -5,21 +5,21 @@
 class Wtt < Formula
   desc "Git worktree manager — create, navigate, and remove worktrees easily"
   homepage "https://github.com/songtov/wtt"
-  version "0.6.0"
+  version "0.6.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/songtov/wtt/releases/download/v0.6.0/wtt_darwin_amd64.tar.gz"
-      sha256 "60817bf7f3db1be9fa7f8ecb21925489958dd4a09f9822bd172ad0b07986c2ed"
+      url "https://github.com/songtov/wtt/releases/download/v0.6.1/wtt_darwin_amd64.tar.gz"
+      sha256 "de59987f8405f1238cf684c9236650d672789ff3fe027ebef615c90a1346d689"
 
       define_method(:install) do
         bin.install "wtt-bin"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/songtov/wtt/releases/download/v0.6.0/wtt_darwin_arm64.tar.gz"
-      sha256 "91a456e4def25fbfa9a5b46355edee9143aa720f8a569563e44ec0560d39599b"
+      url "https://github.com/songtov/wtt/releases/download/v0.6.1/wtt_darwin_arm64.tar.gz"
+      sha256 "f3eb8cc2661d003f242b80a8b6495a90acc08c8ef2aad3db6caa74f3467a2f07"
 
       define_method(:install) do
         bin.install "wtt-bin"
@@ -29,15 +29,15 @@ class Wtt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/songtov/wtt/releases/download/v0.6.0/wtt_linux_amd64.tar.gz"
-      sha256 "fc14353eb9a1973c91216fe18073045db69b11b6e80d87a9e43790d19e718f6f"
+      url "https://github.com/songtov/wtt/releases/download/v0.6.1/wtt_linux_amd64.tar.gz"
+      sha256 "e4024067aed631df0ce8ff2b1503da1910a6a364ab0d7fb292086e862dea1451"
       define_method(:install) do
         bin.install "wtt-bin"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/songtov/wtt/releases/download/v0.6.0/wtt_linux_arm64.tar.gz"
-      sha256 "58038c8c10b5c9c031fd83ddc6cddeb659c6618fdbcf26f2098004d5148f6dd1"
+      url "https://github.com/songtov/wtt/releases/download/v0.6.1/wtt_linux_arm64.tar.gz"
+      sha256 "f8746d5618dc4db62fa9607f6c8b6acdd6b1b9b0ffdab6c47e970c32226a1599"
       define_method(:install) do
         bin.install "wtt-bin"
       end
